@@ -4,7 +4,10 @@ RUN git clone https://github.com/bef/erlswf.git && \
 	cd erlswf/ && \
 	make lib && \
 	make && \
-	make install 
+	make install
+
+
+WORKDIR /work
 
 CMD ["ssacli"]
 
